@@ -1,0 +1,42 @@
+section.sectionButton{
+    text-align: center;
+  
+  }
+
+    .button:hover{
+        cursor: pointer;
+        border: 2px solid #fc5035;
+    }
+    .button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 10px 40px;
+      overflow: hidden;
+      border-radius:20px;
+    }
+
+    .button:hover:before{opacity: 1; transform: translate(0,0);}
+    .button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      color:#fc5035;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: 25px;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+    }
+
+    .button:hover div{opacity: 0; transform: translate(100%,0)}
+    .button div{
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      transition: all .3s ease-in-out;
+      }

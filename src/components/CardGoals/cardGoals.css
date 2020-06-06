@@ -1,0 +1,21 @@
+
+p{
+    font-size:20px;
+    cursor:pointer;
+    text-align:center;
+    margin:auto;
+}
+.input-check{
+    display:none;
+}
+
+.label-iconcheck{
+    color:green;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+input:checked + .container-text p {
+    color:#99ffa0;
+    text-decoration: line-through;
+}
